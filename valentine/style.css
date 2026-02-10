@@ -5,39 +5,44 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Body */
 body {
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
+  background: #fff0f5;
 }
 
-
+/* Main container */
 .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;   /* allows scrolling */
+  padding: 40px 15px;
 }
 
+/* Screens */
 .screen {
   display: none;
   text-align: center;
-  padding: 20px;
+  width: 100%;
 }
 
 .screen.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Headings */
 h1 {
   color: #c2185b;
   font-size: 1.6rem;
   margin-bottom: 25px;
 }
 
+/* Buttons */
 button {
   padding: 12px 25px;
   border: none;
@@ -53,9 +58,20 @@ button {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 /* Floating hearts */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
 .hearts span {
   position: absolute;
   animation: float 6s linear infinite;
@@ -78,31 +94,42 @@ button {
   line-height: 1.6;
   color: #6a1b4d;
   max-width: 320px;
-  margin: auto;
+  margin: 20px auto;
 }
 
-/* Slider */
+/* Image slider */
 .slider {
   width: 220px;
   height: 220px;
   margin: 25px auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
   position: absolute;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .active-slide {
   opacity: 1;
 }
+
+/* Text near slider */
 .slider-text {
-  margin: 10px 0;
+  margin-top: 10px;
   font-size: 0.95rem;
   color: #7b1e4a;
 }
