@@ -17,9 +17,9 @@ body {
   /* THIS is the pink from your screenshot */
   background: linear-gradient(
     to bottom,
-    #fde2e8 0%,
-    #f9c5d1 50%,
-    #f6b1c3 100%
+    #f9e9ec 0%,
+    #f8d1da 50%,
+    #fbd1dc 100%
   );
 }
 
