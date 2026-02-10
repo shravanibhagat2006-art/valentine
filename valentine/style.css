@@ -6,13 +6,17 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
-  height: 100vh;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
+
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
