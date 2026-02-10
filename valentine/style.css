@@ -10,8 +10,9 @@ body {
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #fff0f5;
+  background: linear-gradient(135deg, #ffd1dc, #fff0f5);
 }
+
 
 /* Main container */
 .container {
