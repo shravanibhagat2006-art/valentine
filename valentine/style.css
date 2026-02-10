@@ -13,8 +13,16 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  background: #f78fb0;/* SAME soft pink */
+
+  /* THIS is the pink from your screenshot */
+  background: linear-gradient(
+    to bottom,
+    #fde2e8 0%,
+    #f9c5d1 50%,
+    #f6b1c3 100%
+  );
 }
+
 
 
 
@@ -137,4 +145,10 @@ button {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #7b1e4a;
+}
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 15px;
 }
